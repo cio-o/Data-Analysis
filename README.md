@@ -59,6 +59,8 @@ Key assumptions
 ## Pipeline
 The four raw sources are loaded into pandas, pass through five transform steps in order, and are exported as one CSV. The whole pipeline is implemented in Python (pandas) in one notebook, with a Markdown cell before each step:
 
+![Diagram](./Screenshot 2026-11-13 101021)
+
 ### Extract
 1. Wage orders and NWPC summary tables are read and coded into a CSV with one row per region, wage category and wage order (order number, effectivity date, daily rate, tranche if any).
 2. CPI by region is downloaded from OpenSTAT as CSV.
